@@ -1,0 +1,71 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+  {
+ "imports": {
+"@material/web/": "https://esm.run/@material/web/"
+  }
+}
+ </script>
+ <script type="module">
+import '@material/web/all.js';
+import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+// index.js
+document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+</head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="styles.css"> <!-- Link to the compiled CSS -->
+<component-name>
+  <script type="module" src="./index.js"></script>
+   <label>
+   Confirm if you are not a human lolololol
+ <md-checkbox checked></md-checkbox>
+</label>
+<md-outlined-button>Back</md-outlined-button>
+<md-filled-button>Next</md-filled-button>
+</component-name>
+</head>
+<script type="importmap">
+    {
+      "imports": {
+        "moment": "/node_modules/moment/src/moment.js",
+        "lodash": "/node_modules/lodash-es/lodash.js"
+      }
+    }
+    </script>
+  <body>
+    <h1 class="md-typescale-display-medium">Hello Material!</h1>
+    <form>
+      <p class="md-typescale-body-medium">Check out these controls in a form!</p>
+      <md-checkbox></md-checkbox>
+      <div>
+        <md-radio name="group"></md-radio>
+        <md-radio name="group"></md-radio>
+        <md-radio name="group"></md-radio>
+      </div>
+      <md-outlined-text-field label="Favorite color" value="Purple"></md-outlined-text-field>
+      <md-outlined-button type="reset">Reset</md-outlined-button>
+    </form>
+    <form>
+    <div>
+<md-slider range value-start="25" value-end="75"></md-slider>
+    <md-slider step="3" ticks min="0" max="20"></md-slider>
+    <md-slider labeled></md-slider>
+    </div>
+  </form>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      body {
+        background: #3100876b;
+      }
+    </style>
+  </body>
+  </html>
